@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+ 
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kontakt | OfG-Studium Webdesign</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="icon" href="images/logo-favicon.png">
+        <!-- Webfonts-Einbindung -->
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'> 
+        <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css'>
+        
+</head>
+ 
+<body>
+<!-- Header -->
+<div id="header">
+        <div id="wrapper">
+            <a href="index.html"><img src="images/logo-duplex.png" height="70" width="210" alt="Logo Duplex - Die Webagentur"></a>
+            <ul id="navigation">
+                <li><a href="ueber.html">Über uns</a></li>
+                <li><a href="projekte.html">Projekte</a></li>
+                <li><a href="leistungen.html">Leistungen</a>
+                    <ul>                                        
+                        <li><a href="screendesign.html">Screendesign</a></li>
+                        <li><a href="app-design.html">App-Design</a></li>        
+                        <li><a href="programmierung.html">Programmierung</a></li>        
+                        <li><a href="social-media.html">Social Media</a></li>
+                    </ul>
+                </li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            </ul>
+        </div>
+</div>
+ 
+<!-- Content -->
+
+<div class="wrapper">
+    <div class="col_2_3">
+        <h1>Kontakt</h1>
+        <p>DUPLEX - Die Webagentur#<br>
+        Hauptstrasse 0815#<br>
+        54321 Musterstadt</p>
+        <p>Telefon: +49 001 98765432<br>
+        E-Mail: <a href="mailto:info@duplex-agentur.de">info@duplex-agentur.de</a>
+        </p>
+        <h2>Kontaktformular</h2>
+        <form action="formular.php" method="post"> 
+            <p> 
+                <label for="name">Vor- und Nachname</label>
+                <input id="name" type="text" name="name" size="30"><br >
+                <label for="email">Emailadresse</label>
+                <input id="email" type="text" name="email" size="30">
+            </p>
+            <p>
+                <label for="kunde">Neukunde:</label> 
+                <input type="radio" checked name="kunde" value="ja" id="neukunde"> Ja 
+                <input type="radio" name="kunde" value="nein" id="kunde"> Nein 
+            </p>
+            <p> 
+                <label for="anfrage">Projektanfrage:</label> 
+                <select name="anfrage" size="1" id="anfrage"> 
+                <option>Webseitenrelaunch</option> 
+                <option>Neue Webseite</option> 
+                <option>SEO</option> 
+                <option>Social Media</option> 
+                <option>App</option> 
+                </select> 
+            </p>
+            <p>
+                <input type="checkbox" name="tel" value=""> Bitte um Rückruf
+            </p>
+            <p>
+                <label for="nachricht">Ihre Nachricht:</label> 
+                <textarea>Ihr Text...</textarea> 
+            </p>
+            <input id="Senden" type="submit" name="senden" value="Senden">
+            <input type="reset">
+            
+        </form>
+    </div>
+    
+</div>
+ 
+<!-- Footer -->
+<div id="footer">
+    <div class="wrapper">
+            <div class="col_1_3">
+                <h2>Kontakt</h2>
+                <p>DUPLEX - Die Webagentur<br>Hauptstrasse 0815<br>
+                    54321 Musterstadt</p><p>Telefon: +49 001 98765432<br>
+                    E-Mail: <a href="mailto:info@duplex-agentur.de">info@duplex-agentur.de</a></p>
+            </div>
+            <div class="col_1_3">
+                <h2>Netzwerke</h2>
+                <p><a href="http://facebook.com">facebook</a><br>
+                <a href="http://twitter.com">twitter</a><br>
+                <a href="https://plus.google.com/?hl=de?">google+</a><br></p>
+            </div>
+            <div class="col_1_3">
+                <p><a href="mailto:info@duplex-agentur.de">info@duplex-agentur.de</a>
+                     | <a href="impressum.html">Impressum</a></p>
+            </div>
+    </div>
+</div>
+ 
+</body>
+</html>
